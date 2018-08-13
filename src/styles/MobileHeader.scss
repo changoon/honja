@@ -1,0 +1,45 @@
+.MobileHeader {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: $unit*4;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #283157;
+
+  @include device-sm-min() {
+    display: none;
+  }
+}
+
+.MobileHeader-left {
+  padding: $unit;
+}
+
+.MobileHeader-logoLink {
+  @include styleLink(#FFF);
+
+  font-size: 16px;
+  letter-spacing: 0.07em;
+
+  &:hover {
+    opacity: 1.0;
+  }
+}
+
+.MobileHeader-menuBtn {
+  padding: $unit+2 $unit $unit $unit*3;
+  cursor: pointer;
+
+  &:hover {
+    overflow: 0.65;
+  }
+}
+
+.MobileHeader-menuIcon {
+  width: 23px;
+  height: 16px;
+  font-size: 0;
+}

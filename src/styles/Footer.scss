@@ -1,0 +1,52 @@
+.Footer {
+  font-size: 16px;
+
+  @include device-xs() {
+    font-size: 13px;
+  }  
+}
+
+.Footer-content {
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+
+  @include device-xs() {
+    display: block;
+    width: 100%;
+  }
+}
+
+.Footer-contact {
+  &+.Footer-contact {
+    margin-left: $unit*8;
+
+    @include device-xs() {
+      margin-top: $unit*2;
+      margin-left: 0;
+    }
+  }
+}
+
+.Footer-contactTitle {
+  color: #283157;
+  font-weight: 400;
+}
+
+.Footer-line1 {
+  margin-top: $unit;
+  color: #838383;
+  white-space: pre-line;
+
+  @include device-xs() {
+    margin-top: ceil($unit*0.5);
+  }
+}
+
+.Footer-line2 {
+  color: #838383;
+}
+
+.Footer-emailLink {
+  @include styleLink(#838383);
+}

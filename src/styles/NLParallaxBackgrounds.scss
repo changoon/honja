@@ -1,0 +1,24 @@
+.NLParallaxBackgrounds {
+  z-index: 0;    
+}
+
+.NLParallaxBackgrounds-imageWrapper {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #b7c1c3;
+  -webkit-backface-visibility: hidden;
+  z-index: 0;
+}
+
+.NLParallaxBackgrounds-image {
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.2s;
+
+  &.loaded {
+    opacity: 1.0 !important;
+  }
+}

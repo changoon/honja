@@ -1,0 +1,195 @@
+.PortfolioSection {  
+  overflow: hidden;
+  background-color: #E0E0E0;
+  padding: $unit*16 $unit*4 0;
+
+  @include device-xs() {
+    padding: $unit*12 $unit*2 0;
+  }
+}
+
+.PortfolioSection-fixedHeader {
+  background-color: #E0E0E0;
+
+  a {
+    color: #333;
+  }
+}
+
+.PortfolioSection-content {
+  position: relative;
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+  
+  justify-content: space-between;
+
+  @include device-xs() {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+.PortfolioSection-titleContainer {
+  flex-basis: 25%;
+}
+
+.PortfolioSection-title {
+  font-size: 32px;
+
+  @include device-xs() {
+    font-size: 26px;
+  }
+}
+
+.PortfolioSection-descriptionContainer {
+  flex-basis: 66%;
+}
+
+.PortfolioSection-description {
+  font-size: 20px;
+  line-height: 1.8;
+
+  @include device-xs() {
+    margin-top: $unit*2;
+    font-size: 16px;
+  }
+}
+
+.PortfolioSection-projectLink {
+  @include styleBtnLink(white, #283157, #181C37);
+
+  margin-top: $unit*4;
+
+  @include device-xs() {
+    margin-top: $unit*2;
+  }
+}
+
+.PortfolioSection-screenshotContainer {
+  position: relative;
+  height: 500px;
+  margin: $unit*16 auto 0;
+  z-index: 0;
+  
+  @include device-xs() {
+    margin: $unit*28 auto 0;
+    animation: ScreenshotAnim 25s both infinite;
+  }
+}
+
+.PortfolioSection-screenshot1,
+.PortfolioSection-screenshot2,
+.PortfolioSection-screenshot3,
+.PortfolioSection-screenshot4,
+.PortfolioSection-screenshot5 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -180px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+
+  @include device-xs() {
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+  }
+}
+
+.PortfolioSection-screenshot1 {
+  width: 360px;
+  height: 390px;
+  background: url("./images/PortfolioSection-img4.jpg");
+  background-size: cover;
+  transform: translate3d(-100%,0,0);
+
+  @include device-xs() {
+    display: none;
+  }
+  @include device-sm-min() {
+    transition: transform 1s;
+
+    .PortfolioSection.disappear & {
+      transform: translate3d(-65%,0,0);
+    }
+  }
+}
+
+.PortfolioSection-screenshot2 {
+  width: 360px;
+  height: 460px;
+  background: url("./images/PortfolioSection-img2.jpg");
+  background-size: cover;
+  transform: translate3d(-55%,0,0);
+  z-index: 1;
+
+  @include device-xs() {
+    transform: translate3d(20%, -53%, 0);
+    z-index: 3;
+  }
+  @include device-sm-min() {
+    transition: transform 1s;
+
+    .PortfolioSection.disappear & {
+      transform: translate3d(-30%,0,0);
+    }
+  }
+}
+
+.PortfolioSection-screenshot3 {
+  width: 360px;
+  height: 500px;
+  background: url("./images/PortfolioSection-img1.jpg");
+  background-size: cover;
+  z-index: 2;
+
+  @include device-xs() {
+    transform: translate3d(12%, 0, 0);
+    z-index: 5;
+  }
+  @include device-sm-min() {
+    transition: transform 1s;
+
+    .PortfolioSection.disappear & {
+      transform: translate3d(0,0,0) scale3d(1.1,1.1,1.1);
+    }
+  }
+}
+
+.PortfolioSection-screenshot4 {
+  width: 360px;
+  height: 460px;
+  background: url("./images/PortfolioSection-img3.jpg");
+  background-size: cover;
+  transform: translate3d(55%,0,0);
+  z-index: 1;
+
+  @include device-xs() {
+    transform: translate3d(-20%, -33%, 0);
+    z-index: 4;
+  }
+  @include device-sm-min() {
+    transition: transform 1s;
+
+    .PortfolioSection.disappear & {
+      transform: translate3d(30%,0,0);
+    }
+  }
+}
+
+.PortfolioSection-screenshot5 {
+  width: 360px;
+  height: 390px;
+  background: url("./images/PortfolioSection-img5.jpg");
+  background-size: cover;
+  transform: translate3d(100%,0,0);
+
+  @include device-xs() {
+    display: none;
+  }
+  @include device-sm-min() {
+    transition: transform 1s;
+
+    .PortfolioSection.disappear & {
+      transform: translate3d(65%,0,0);
+    }
+  }
+}

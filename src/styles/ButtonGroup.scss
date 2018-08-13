@@ -1,0 +1,47 @@
+.ButtonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin: ceil($unit*0.5)*-1;
+
+  @include device-xs() {
+    flex-wrap: wrap;
+  }
+}
+
+.ButtonGroup-inputContainer {
+  flex: 1 1 auto;
+  width: 25%;
+  padding: ceil($unit*0.5);
+
+  @include device-xs() {
+    width: 50%;
+  }
+}
+
+.ButtonGroup-label {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  padding: $unit;
+  color: #8C8C8C;
+  background-color: #F5F5F5;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transition: color 0.15s, background-color 0.15s;
+
+  &:hover {
+    color: #283157;
+  }
+  &.checked {
+    color: #283157;
+    background-color: #DCE3EF;
+  }
+}
+
+.ButtonGroup-input {
+  display: none;
+}

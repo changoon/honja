@@ -1,0 +1,108 @@
+.ProjectsHeroSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: $unit*8 $unit*4;
+  color: #333;
+  background-color: #e5e5e7;
+
+  @include device-xs() {
+    padding: $unit*8 $unit*2;
+  }
+}
+
+.ProjectsHeroSection-fixedHeader {
+  a {
+    color: #333;
+  } 
+}
+
+.ProjectsHeroSection-bg {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url('./images/ProjectHeroSection-bg.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ProjectsHeroSection-cloudBg {
+  position: absolute;
+  width: 3600px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url('./images/ProjectsHeroSection-cloud.png');
+  background-position: left top;
+  background-repeat: repeat-x;
+  background-size: cover;
+  animation: CloudAnim 200s linear infinite;
+}
+
+.ProjectsHeroSection-content {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  flex: 0 1 1024px;
+}
+
+.ProjectsHeroSection-title {
+  width: 60%;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 1.8;
+
+  strong {
+    font-weight: 700;
+  }
+
+  @include device-xs() {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+.ProjectsHeroSection-downArrowIcon {
+  position: absolute;
+  width: 46px;
+  height: 24px;
+  left: 50%;
+  bottom: $unit*3;
+  margin-left: -23px;
+  font-size: 0;
+  animation: DownArrowAnim 1s infinite;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.65;
+  }
+}
+
+@keyframes CloudAnim {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes DownArrowAnim {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, 20%, 0);
+  }
+  100% {  
+    transform: translate3d(0, 0, 0);
+  }
+}

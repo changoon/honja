@@ -1,0 +1,264 @@
+.ContactInputSection {
+  background-color: white;
+  padding: $unit*12 $unit*4;
+
+  @include device-xs() {
+    padding: $unit*12 $unit*2;
+  }
+}
+
+.ContactInputSection-content {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.ContactInputSection-title {
+  font-size: 32px;
+  font-weight: 400;
+
+  @include device-xs() {
+    font-size: 26px;
+  }
+}
+
+.ContactInputSection-fieldSet {
+  margin: $unit*5 0 0;
+  padding: 0;
+  border: none;
+  font-size: 16px;
+
+  @include device-xs() {
+    margin: $unit*3 0 0;
+  }
+
+  .ContactInputSection.sending &,
+  .ContactInputSection.sent & {
+    visibility: hidden;
+  }
+}
+
+.ContactInputSection-nameInputContainer {
+  
+}
+
+.ContactInputSection-nameInput,
+.ContactInputSection-emailInput {
+  width: 100%;
+  padding: $unit 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #D8D8D8;
+  border-radius: 0;
+  outline: none;
+  appearance: none;
+  transition: border-color 0.3s;
+
+  &:active, &:focus {
+    border-color: #283157;
+  }
+
+  &.error {
+    color: #EC6040;
+    border-color: #EC6040;
+  }
+}
+
+.ContactInputSection-nameInput {
+  
+}
+
+.ContactInputSection-nameInputError,
+.ContactInputSection-emailInputError,
+.ContactInputSection-messageInputError {
+  position: absolute;
+  margin-top: 2px;
+  color: #EC6040;
+  font-size: 13px;
+  opacity: 0;
+
+  &.visible {
+    opacity: 1;
+  }
+}
+
+.ContactInputSection-nameInputError {
+
+}
+
+.ContactInputSection-emailInputContainer {
+  margin-top: $unit*2;
+}
+
+.ContactInputSection-emailInput {
+  
+}
+
+.ContactInputSection-emailInputError {
+  
+}
+
+.ContactInputSection-messageContainer {
+  margin-top: $unit*2;
+}
+
+.ContactInputSection-messageInput {
+  display: block;
+  width: 100%;
+  height: $unit*12;
+  margin: 0;
+  padding: $unit 0;
+  word-wrap: break-word;
+  resize: vertical;
+  border: none;
+  border-bottom: 1px solid #D8D8D8;
+  border-radius: 0;
+  outline: none;
+  appearance: none;
+  transition: color 0.3s, border-color 0.3s;
+
+  &:active, &:focus {
+    border-color: #283157;
+  }
+
+  &.error {
+    border-color: #EC6040;
+  }
+}
+
+.ContactInputSection-messageInputError {
+
+}
+
+.ContactInputSection-serviceButtonGroupTitle {
+  margin-top: $unit*3;
+  font-size: 20px;
+}
+
+.ContactInputSection-serviceButtonGroup {
+  margin-top: $unit;
+}
+
+.ButtonGroup-sendBtn {
+  width: 100%;
+  margin-top: $unit*6;
+  font-size: 18px;
+  font-weight: 300;
+
+  @include styleBtn(white, #283157, #181C37);
+}
+
+.ContactInputSection-spinnerContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  .ContactInputSection.idle & {
+    display: none;
+  }
+}
+
+.ContactInputSection-spinner {
+  position: relative;
+  width: $unit*8;
+  height: $unit*8;
+
+  &::before, &::after {
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    width: $unit*8;
+    height: $unit*8;
+    top: 0;
+    left: 0;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  &::before {
+    border-color: transparent;
+  }
+
+  &::after {
+    border-color: #283157 transparent transparent transparent;
+    transform-origin: 50%;
+    animation: ProgressIndicatorAnimation 1.3s infinite;
+  }
+}
+
+.ContactInputSection-spinnerDone {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 4px solid #283157;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.4s 0.4s;
+
+  .ContactInputSection.sent & {
+    opacity: 1;
+  }
+}
+
+.ContactInputSection-spinnerCheck {
+  position: absolute;
+  width: 31;
+  height: 22;
+  top: 50%;
+  left: 50%;
+  margin: -11px 0 0 -15px;
+  opacity: 0;
+  transform: scale3d(0,0,0);
+  transition: opacity 0.4s 0.8s, transform 0.4s 0.8s;
+  
+  .ContactInputSection.sent & {
+    opacity: 1;
+    transform: scale3d(1,1,1);
+  }
+}
+
+.ContactInputSection-sendingStatusContainer {
+  font-size: 20px;
+  margin-top: $unit*2;
+  text-align: center;
+  line-height: 1.8;
+  opacity: 0;
+  transition: opacity 0.4s 0.8s;
+
+  @include device-xs() {
+    font-size: 16px;
+  }
+
+  .ContactInputSection.sent & {
+    opacity: 1;
+  }
+}
+
+.ContactInputSection-sent {
+  white-space: pre-line;
+
+  @include device-xs() {
+    white-space: normal;
+  }
+}
+
+.ContactInputSection-newMessage {
+  @include styleLink(#94949c);
+  display: inline-block;
+  cursor: pointer;
+}
+
+@keyframes ProgressIndicatorAnimation {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

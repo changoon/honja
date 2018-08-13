@@ -1,0 +1,24 @@
+@mixin styleBtn($color, $background-color, $hover-background-color) {
+  display: inline-block;
+  vertical-align: middle;
+  padding: $unit+2 $unit*2 $unit $unit*3;
+  color: $color;
+  background-color: $background-color;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  transition: background-color 0.15s;
+  appearance: button;
+  cursor: pointer;
+
+  &:visited,
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+  &:hover {
+    background-color: $hover-background-color;
+  }
+}

@@ -1,0 +1,103 @@
+.HowSection {
+  color: white;
+  text-align: center;
+}
+
+.HowSection-stepContainer {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  
+}
+
+.HowSection-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  .HowSection-stepContainer1 & {
+    background-position: center top;
+  }
+
+  .HowSection-stepContainer1 &,
+  .HowSection-stepContainer2 & {
+    transition: transform 1s;
+    transform: scale3d(1.15,1.15,1.15);
+
+    &.appear {
+      transform: scale3d(1,1,1);
+    }
+  }
+
+}
+
+.HowSection-fixedHeader {
+  .HowSection-stepContainer1 & {
+    background: #262022;
+  }
+  .HowSection-stepContainer2 & {
+    background: #959595;
+
+    .FixedHeader-subtitle {
+      color: #d4d4db;
+    }
+  }
+  .HowSection-stepContainer3 & {
+    background: #252F3F;
+  }
+}
+
+.HowSection-particleJS {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -200px;
+  opacity: 0.3;
+}
+
+.HowSection-stepContent {
+  width: 600px;
+  position: relative;
+
+  @include device-xs() {
+    width: 100%;
+    padding: 0 $unit*2;
+  }
+}
+
+.HowSection-stepNumber {
+  font-size: 20px;
+
+  @include device-xs() {
+    font-size: 16px;
+  }
+}
+
+.HowSection-stepTitle {
+  margin-top: $unit*2;
+  font-size: 32px;
+
+  @include device-xs() {
+    font-size: 26px;
+  }
+}
+
+.HowSection-stepDescription {
+  margin-top: $unit*2;
+  font-size: 20px;
+
+  @include device-xs() {
+    font-size: 16px;
+  }
+}

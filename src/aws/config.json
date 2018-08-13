@@ -1,0 +1,9 @@
+{
+	"REGION": "us-west-2",
+	"COGNITO": {
+		"IDENTITY_POOL_ID": "us-west-2:7dc64589-772a-42ea-8adc-5dc9334d4a84"
+	},
+	"LAMBDA": {
+		"FUNCTION_NAME": "navylab-prod-emailSender"
+	}
+}

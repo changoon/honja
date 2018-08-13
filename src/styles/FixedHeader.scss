@@ -1,0 +1,58 @@
+.FixedHeader {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: $unit*5;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  @include device-xs() {
+    display: none !important;
+  }
+}
+
+.FixedHeader-left {
+  display: flex;
+  align-items: baseline;
+  padding: $unit $unit*4;
+}
+
+.FixedHeader-logoLink {
+  @include styleLink(#FFF);
+
+  font-size: 24px;
+  letter-spacing: 0.07em;
+
+  &:hover {
+    opacity: 1.0;
+  }
+}
+
+.FixedHeader-splitter {
+  display: inline-block;
+  width: 1px;
+  height: $unit;
+  margin: 0 $unit;
+  background: #bebebe;
+}
+
+.FixedHeader-subtitle {
+  color: #94949c;
+  display: inline-block;
+}
+
+.FixedHeader-right {
+  padding: $unit*1.5 $unit*4;
+}
+
+.FixedHeader-projectLink {
+  @include styleLink(#FFF);
+}
+
+.FixedHeader-contactLink {
+  @include styleLink(#FFF);
+
+  margin-left: $unit*3;
+}

@@ -1,0 +1,13 @@
+.ProjectsGridSection {
+  position: relative;
+}
+
+.ProjectsGridSection-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  opacity: 0.88;
+  transition: background-color 0.6s;
+}

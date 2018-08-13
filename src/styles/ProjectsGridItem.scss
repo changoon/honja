@@ -1,0 +1,96 @@
+.ProjectsGridItem {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  color: white;
+  padding: $unit*8 $unit*4;
+
+  @include device-xs() {
+    flex-direction: column;
+    height: 100%;
+    min-height: 100vh;
+    padding: $unit*12 $unit*2;
+  }
+}
+
+.ProjectsGridItem-fixedHeader {
+  background-color: #111;
+}
+
+.ProjectsGridItem-content {
+  position: relative;
+  flex: 0 1 1024px;
+
+  @include device-xs() {
+    flex: none;    
+    margin-top: $unit*4;
+  }
+}
+
+.ProjectsGridItem-subtitle {
+  font-size: 18px;
+  opacity: 0.8;
+
+  @include device-xs() {
+    font-size: 16px;
+  }
+}
+
+.ProjectsGridItem-title {
+  width: 50%;
+  font-size: 40px;
+
+  @include device-xs() {
+    width: 100%;
+    font-size: 26px;
+    margin-top: ceil($unit*0.5);
+  }
+}
+
+.ProjectsGridItem-description {
+  width: 50%;
+  margin-top: $unit*2;
+  padding-right: $unit*8;
+  font-size: 18px;
+  opacity: 0.8;
+
+  @include device-xs() {
+    width: 100%;
+    padding-right: 0;
+    font-size: 16px;
+  }
+}
+
+.ProjectsGridItem-link {
+  @include styleOpenNewLink(#333, rgba(255,255,255,0.9), rgba(#E7E7E7,0.9));
+  margin-top: $unit*3;
+}
+
+.ProjectsGridItem-image {
+  position: absolute;
+  width: 50%;
+  height: 540px;
+  top: 50%;
+  right: 0;
+  margin-top: -270px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 $unit $unit*5 rgba(0, 0, 0, 0.4);
+
+  @include device-xs() {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 1080/1440 * 100%;
+    top: 0;
+    margin-top: 0;
+    box-shadow: none;
+    transform: none !important;
+  }
+}

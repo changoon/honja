@@ -1,0 +1,62 @@
+.ContactPage {
+  background-color: white;	
+}
+
+.ContactPage-fixedHeader {
+  background-color: white;
+
+    a {
+      color: #333;
+    }  
+}
+
+.ContactPage-maps {
+  display: flex;
+
+  @include device-xs() {
+    flex-direction: column;
+  }
+}
+
+.ContactPage-seoulMap, .ContactPage-usMap {
+  flex: 1 1 auto;
+  height: 600px;
+  
+  @include device-xs() {
+    height: 400px;
+  }
+}
+
+.ContactPage-seoulMap {
+
+}
+
+.ContactPage-usMap {
+
+}
+
+.ContactPage-infoWindow {
+  font-size: 16px;
+  line-height: 1.8;
+
+  @include device-xs() {
+    font-size: 14px;
+  }
+}
+
+.ContactPage-infoTitle {
+  font-size: 18px;
+  color: #283157;
+  font-weight: 700;
+
+  @include device-xs() {
+    font-size: 16px;
+  }
+}
+
+.ContactPage-infoLine1 {
+  margin-top: ceil($unit*0.5);
+}
+
+.ContactPage-infoLine2 {
+}

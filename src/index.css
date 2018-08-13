@@ -1,0 +1,1948 @@
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  line-height: 1.15;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+html {
+  height: 100%;
+  background-color: #181C37;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+@-moz-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-webkit-viewport {
+  width: device-width; }
+
+@viewport {
+  width: device-width; }
+
+body {
+  height: 100%;
+  color: #333;
+  letter-spacing: 0.03em; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  letter-spacing: 0.03em; }
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+figure {
+  margin: 0;
+  padding: 0; }
+
+::selection {
+  color: white;
+  background: #283157; }
+
+body,
+input,
+textarea,
+.gm-style {
+  font-family: -apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,"Roboto","Segoe UI","Apple SD Gothic Neo","Malgun Gothic",Arial,sans-serif;
+  font-weight: 300;
+  line-height: 1.5; }
+
+#root {
+  height: 100%; }
+
+.ProjectsPage-contact {
+  background: rgba(249, 249, 249, 0.9); }
+
+.ProjectsPage-background {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: url("./images/ProjectsGridSection-bg.jpg");
+  background-size: cover; }
+
+.ContactPage {
+  background-color: white; }
+
+.ContactPage-fixedHeader {
+  background-color: white; }
+  .ContactPage-fixedHeader a {
+    color: #333; }
+
+.ContactPage-maps {
+  display: flex; }
+  @media (max-width: 767px) {
+    .ContactPage-maps {
+      flex-direction: column; } }
+
+.ContactPage-seoulMap, .ContactPage-usMap {
+  flex: 1 1 auto;
+  height: 600px; }
+  @media (max-width: 767px) {
+    .ContactPage-seoulMap, .ContactPage-usMap {
+      height: 400px; } }
+
+.ContactPage-infoWindow {
+  font-size: 16px;
+  line-height: 1.8; }
+  @media (max-width: 767px) {
+    .ContactPage-infoWindow {
+      font-size: 14px; } }
+
+.ContactPage-infoTitle {
+  font-size: 18px;
+  color: #283157;
+  font-weight: 700; }
+  @media (max-width: 767px) {
+    .ContactPage-infoTitle {
+      font-size: 16px; } }
+
+.ContactPage-infoLine1 {
+  margin-top: 6px; }
+
+.NotFoundPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("./images/HowSection-step3.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.NotFoundPage-particleJS {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+.NotFoundPage-content {
+  position: relative;
+  color: white;
+  text-align: center; }
+
+.NotFoundPage-title {
+  font-size: 40px;
+  font-weight: 200; }
+  @media (max-width: 767px) {
+    .NotFoundPage-title {
+      font-size: 26px; } }
+
+.NotFoundPage-description {
+  margin-top: 11px;
+  font-size: 32px;
+  font-weight: 100; }
+  @media (max-width: 767px) {
+    .NotFoundPage-description {
+      font-size: 26px; } }
+
+.NotFoundPage-goHomeLink {
+  margin-top: 44px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 11px 22px 11px 33px;
+  color: white;
+  background-color: #202232;
+  text-decoration: none;
+  outline: none;
+  transition: background-color 0.15s; }
+  .NotFoundPage-goHomeLink span {
+    vertical-align: middle; }
+  .NotFoundPage-goHomeLink:visited, .NotFoundPage-goHomeLink:hover, .NotFoundPage-goHomeLink:active, .NotFoundPage-goHomeLink:focus {
+    text-decoration: none;
+    outline: none; }
+  .NotFoundPage-goHomeLink:hover {
+    background-color: #181c23; }
+  .NotFoundPage-goHomeLink:hover::after {
+    transform: translate3d(60%, 0, 0); }
+  .NotFoundPage-goHomeLink::after {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 9px;
+    height: 14px;
+    margin-left: 22px;
+    background: url("./icons/right-arrow.svg");
+    background-size: 9px 14px;
+    background-repeat: no-repeat;
+    transition: transform 0.15s; }
+
+.AboutSection {
+  background: white;
+  text-align: center;
+  padding: 176px 44px; }
+  @media (max-width: 767px) {
+    .AboutSection {
+      padding: 132px 22px; } }
+
+.AboutSection-fixedHeader {
+  background: white; }
+  .AboutSection-fixedHeader a {
+    color: #333; }
+
+.AboutSection-content {
+  overflow: hidden;
+  max-width: 1024px;
+  margin: 0 auto; }
+
+.AboutSection-title {
+  font-size: 32px;
+  white-space: pre-line; }
+  @media (max-width: 767px) {
+    .AboutSection-title {
+      font-size: 26px;
+      white-space: normal; } }
+
+.AboutSection-cardContainer {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  margin: 22px -132px 0; }
+
+.AboutSection-card {
+  width: 320px;
+  margin: 22px 132px; }
+
+.AboutSection-cardImg {
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  width: 243px;
+  height: 292px; }
+
+.AboutSection-cardTitle {
+  font-size: 26px;
+  font-weight: 700; }
+  @media (max-width: 767px) {
+    .AboutSection-cardTitle {
+      font-size: 22px; } }
+
+.AboutSection-cardDescription {
+  margin-top: 22px;
+  font-size: 20px;
+  text-align: center; }
+  @media (max-width: 767px) {
+    .AboutSection-cardDescription {
+      font-size: 16px; } }
+
+.App {
+  display: flex;
+  position: relative;
+  height: 100%;
+  justify-content: center; }
+
+.App-content {
+  position: relative;
+  width: 100%; }
+
+.ButtonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin: -6px; }
+  @media (max-width: 767px) {
+    .ButtonGroup {
+      flex-wrap: wrap; } }
+
+.ButtonGroup-inputContainer {
+  flex: 1 1 auto;
+  width: 25%;
+  padding: 6px; }
+  @media (max-width: 767px) {
+    .ButtonGroup-inputContainer {
+      width: 50%; } }
+
+.ButtonGroup-label {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  padding: 11px;
+  color: #8C8C8C;
+  background-color: #F5F5F5;
+  text-align: center;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  user-select: none;
+  cursor: pointer;
+  transition: color 0.15s, background-color 0.15s; }
+  .ButtonGroup-label:hover {
+    color: #283157; }
+  .ButtonGroup-label.checked {
+    color: #283157;
+    background-color: #DCE3EF; }
+
+.ButtonGroup-input {
+  display: none; }
+
+.ContactInputSection {
+  background-color: white;
+  padding: 132px 44px; }
+  @media (max-width: 767px) {
+    .ContactInputSection {
+      padding: 132px 22px; } }
+
+.ContactInputSection-content {
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto; }
+
+.ContactInputSection-title {
+  font-size: 32px;
+  font-weight: 400; }
+  @media (max-width: 767px) {
+    .ContactInputSection-title {
+      font-size: 26px; } }
+
+.ContactInputSection-fieldSet {
+  margin: 55px 0 0;
+  padding: 0;
+  border: none;
+  font-size: 16px; }
+  @media (max-width: 767px) {
+    .ContactInputSection-fieldSet {
+      margin: 33px 0 0; } }
+  .ContactInputSection.sending .ContactInputSection-fieldSet,
+  .ContactInputSection.sent .ContactInputSection-fieldSet {
+    visibility: hidden; }
+
+.ContactInputSection-nameInput,
+.ContactInputSection-emailInput {
+  width: 100%;
+  padding: 11px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #D8D8D8;
+  border-radius: 0;
+  outline: none;
+  appearance: none;
+  transition: border-color 0.3s; }
+  .ContactInputSection-nameInput:active, .ContactInputSection-nameInput:focus,
+  .ContactInputSection-emailInput:active,
+  .ContactInputSection-emailInput:focus {
+    border-color: #283157; }
+  .ContactInputSection-nameInput.error,
+  .ContactInputSection-emailInput.error {
+    color: #EC6040;
+    border-color: #EC6040; }
+
+.ContactInputSection-nameInputError,
+.ContactInputSection-emailInputError,
+.ContactInputSection-messageInputError {
+  position: absolute;
+  margin-top: 2px;
+  color: #EC6040;
+  font-size: 13px;
+  opacity: 0; }
+  .ContactInputSection-nameInputError.visible,
+  .ContactInputSection-emailInputError.visible,
+  .ContactInputSection-messageInputError.visible {
+    opacity: 1; }
+
+.ContactInputSection-emailInputContainer {
+  margin-top: 22px; }
+
+.ContactInputSection-messageContainer {
+  margin-top: 22px; }
+
+.ContactInputSection-messageInput {
+  display: block;
+  width: 100%;
+  height: 132px;
+  margin: 0;
+  padding: 11px 0;
+  word-wrap: break-word;
+  resize: vertical;
+  border: none;
+  border-bottom: 1px solid #D8D8D8;
+  border-radius: 0;
+  outline: none;
+  appearance: none;
+  transition: color 0.3s, border-color 0.3s; }
+  .ContactInputSection-messageInput:active, .ContactInputSection-messageInput:focus {
+    border-color: #283157; }
+  .ContactInputSection-messageInput.error {
+    border-color: #EC6040; }
+
+.ContactInputSection-serviceButtonGroupTitle {
+  margin-top: 33px;
+  font-size: 20px; }
+
+.ContactInputSection-serviceButtonGroup {
+  margin-top: 11px; }
+
+.ButtonGroup-sendBtn {
+  width: 100%;
+  margin-top: 66px;
+  font-size: 18px;
+  font-weight: 300;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 13px 22px 11px 33px;
+  color: white;
+  background-color: #283157;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  transition: background-color 0.15s;
+  appearance: button;
+  cursor: pointer; }
+  .ButtonGroup-sendBtn:visited, .ButtonGroup-sendBtn:hover, .ButtonGroup-sendBtn:active, .ButtonGroup-sendBtn:focus {
+    text-decoration: none;
+    outline: none; }
+  .ButtonGroup-sendBtn:hover {
+    background-color: #181C37; }
+
+.ContactInputSection-spinnerContainer {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .ContactInputSection.idle .ContactInputSection-spinnerContainer {
+    display: none; }
+
+.ContactInputSection-spinner {
+  position: relative;
+  width: 88px;
+  height: 88px; }
+  .ContactInputSection-spinner::before, .ContactInputSection-spinner::after {
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    width: 88px;
+    height: 88px;
+    top: 0;
+    left: 0;
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 50%; }
+  .ContactInputSection-spinner::before {
+    border-color: transparent; }
+  .ContactInputSection-spinner::after {
+    border-color: #283157 transparent transparent transparent;
+    transform-origin: 50%;
+    animation: ProgressIndicatorAnimation 1.3s infinite; }
+
+.ContactInputSection-spinnerDone {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 4px solid #283157;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.4s 0.4s; }
+  .ContactInputSection.sent .ContactInputSection-spinnerDone {
+    opacity: 1; }
+
+.ContactInputSection-spinnerCheck {
+  position: absolute;
+  width: 31;
+  height: 22;
+  top: 50%;
+  left: 50%;
+  margin: -11px 0 0 -15px;
+  opacity: 0;
+  transform: scale3d(0, 0, 0);
+  transition: opacity 0.4s 0.8s, transform 0.4s 0.8s; }
+  .ContactInputSection.sent .ContactInputSection-spinnerCheck {
+    opacity: 1;
+    transform: scale3d(1, 1, 1); }
+
+.ContactInputSection-sendingStatusContainer {
+  font-size: 20px;
+  margin-top: 22px;
+  text-align: center;
+  line-height: 1.8;
+  opacity: 0;
+  transition: opacity 0.4s 0.8s; }
+  @media (max-width: 767px) {
+    .ContactInputSection-sendingStatusContainer {
+      font-size: 16px; } }
+  .ContactInputSection.sent .ContactInputSection-sendingStatusContainer {
+    opacity: 1; }
+
+.ContactInputSection-sent {
+  white-space: pre-line; }
+  @media (max-width: 767px) {
+    .ContactInputSection-sent {
+      white-space: normal; } }
+
+.ContactInputSection-newMessage {
+  color: #94949c;
+  text-decoration: none;
+  outline: none;
+  transition: opacity 0.1s;
+  display: inline-block;
+  cursor: pointer; }
+  .ContactInputSection-newMessage:visited, .ContactInputSection-newMessage:hover, .ContactInputSection-newMessage:active, .ContactInputSection-newMessage:focus {
+    text-decoration: none;
+    outline: none; }
+  .ContactInputSection-newMessage:hover {
+    opacity: 0.65; }
+
+@keyframes ProgressIndicatorAnimation {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+.ContactSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  min-height: 100vh;
+  padding: 44px; }
+  @media (max-width: 767px) {
+    .ContactSection {
+      padding: 0 22px; } }
+
+.ContactSection-fixedHeader {
+  background: #283157; }
+  .ContactSection-fixedHeader a {
+    color: white; }
+
+.ContactSection-content {
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+  vertical-align: middle; }
+  @media (max-width: 767px) {
+    .ContactSection-content {
+      width: 100%; } }
+
+.ContactSection-title {
+  font-size: 32px; }
+  @media (max-width: 767px) {
+    .ContactSection-title {
+      font-size: 26px; } }
+
+.ContactSection-description {
+  width: 70%;
+  margin-top: 22px;
+  font-size: 20px;
+  white-space: pre-line; }
+  @media (max-width: 767px) {
+    .ContactSection-description {
+      width: 100%;
+      font-size: 16px;
+      white-space: normal; } }
+
+.ContactSection-askLink {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 11px 22px 11px 33px;
+  color: white;
+  background-color: #283157;
+  text-decoration: none;
+  outline: none;
+  transition: background-color 0.15s;
+  margin-top: 22px; }
+  .ContactSection-askLink span {
+    vertical-align: middle; }
+  .ContactSection-askLink:visited, .ContactSection-askLink:hover, .ContactSection-askLink:active, .ContactSection-askLink:focus {
+    text-decoration: none;
+    outline: none; }
+  .ContactSection-askLink:hover {
+    background-color: #181C37; }
+  .ContactSection-askLink:hover::after {
+    transform: translate3d(60%, 0, 0); }
+  .ContactSection-askLink::after {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 9px;
+    height: 14px;
+    margin-left: 22px;
+    background: url("./icons/right-arrow.svg");
+    background-size: 9px 14px;
+    background-repeat: no-repeat;
+    transition: transform 0.15s; }
+
+.ContactSection-footer {
+  margin-top: 88px; }
+
+.FixedHeader {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 55px;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+  @media (max-width: 767px) {
+    .FixedHeader {
+      display: none !important; } }
+
+.FixedHeader-left {
+  display: flex;
+  align-items: baseline;
+  padding: 11px 44px; }
+
+.FixedHeader-logoLink {
+  color: #FFF;
+  text-decoration: none;
+  outline: none;
+  transition: opacity 0.1s;
+  font-size: 24px;
+  letter-spacing: 0.07em; }
+  .FixedHeader-logoLink:visited, .FixedHeader-logoLink:hover, .FixedHeader-logoLink:active, .FixedHeader-logoLink:focus {
+    text-decoration: none;
+    outline: none; }
+  .FixedHeader-logoLink:hover {
+    opacity: 0.65; }
+  .FixedHeader-logoLink:hover {
+    opacity: 1.0; }
+
+.FixedHeader-splitter {
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  margin: 0 11px;
+  background: #bebebe; }
+
+.FixedHeader-subtitle {
+  color: #94949c;
+  display: inline-block; }
+
+.FixedHeader-right {
+  padding: 16.5px 44px; }
+
+.FixedHeader-projectLink {
+  color: #FFF;
+  text-decoration: none;
+  outline: none;
+  transition: opacity 0.1s; }
+  .FixedHeader-projectLink:visited, .FixedHeader-projectLink:hover, .FixedHeader-projectLink:active, .FixedHeader-projectLink:focus {
+    text-decoration: none;
+    outline: none; }
+  .FixedHeader-projectLink:hover {
+    opacity: 0.65; }
+
+.FixedHeader-contactLink {
+  color: #FFF;
+  text-decoration: none;
+  outline: none;
+  transition: opacity 0.1s;
+  margin-left: 33px; }
+  .FixedHeader-contactLink:visited, .FixedHeader-contactLink:hover, .FixedHeader-contactLink:active, .FixedHeader-contactLink:focus {
+    text-decoration: none;
+    outline: none; }
+  .FixedHeader-contactLink:hover {
+    opacity: 0.65; }
+
+.Footer {
+  font-size: 16px; }
+  @media (max-width: 767px) {
+    .Footer {
+      font-size: 13px; } }
+
+.Footer-content {
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto; }
+  @media (max-width: 767px) {
+    .Footer-content {
+      display: block;
+      width: 100%; } }
+
+.Footer-contact + .Footer-contact {
+  margin-left: 88px; }
+  @media (max-width: 767px) {
+    .Footer-contact + .Footer-contact {
+      margin-top: 22px;
+      margin-left: 0; } }
+
+.Footer-contactTitle {
+  color: #283157;
+  font-weight: 400; }
+
+.Footer-line1 {
+  margin-top: 11px;
+  color: #838383;
+  white-space: pre-line; }
+  @media (max-width: 767px) {
+    .Footer-line1 {
+      margin-top: 6px; } }
+
+.Footer-line2 {
+  color: #838383; }
+
+.Footer-emailLink {
+  color: #838383;
+  text-decoration: none;
+  outline: none;
+  transition: opacity 0.1s; }
+  .Footer-emailLink:visited, .Footer-emailLink:hover, .Footer-emailLink:active, .Footer-emailLink:focus {
+    text-decoration: none;
+    outline: none; }
+  .Footer-emailLink:hover {
+    opacity: 0.65; }
+
+.HeroSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 88px 0;
+  color: white; }
+
+.HeroSection-bg {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("./images/Hero-bg.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateZ(0);
+  animation: HeroAnim 25s both infinite;
+  will-change: transform; }
+
+.HeroSection-particleJS {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
+
+.HeroSection-title {
+  position: relative;
+  width: 768px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 200; }
+  @media (max-width: 767px) {
+    .HeroSection-title {
+      font-size: 26px;
+      width: 90%; } }
+
+@keyframes HeroAnim {
+  0% {
+    transform: scale(1) rotate(0deg) translate3d(0, 0, 0); }
+  50% {
+    transform: scale(1.5) rotate(1.5deg) skew(5deg, 5deg) translate3d(0, 0, 0); }
+  100% {
+    transform: scale(1) rotate(0deg) translate3d(0, 0, 0); } }
+
+.HowSection {
+  color: white;
+  text-align: center; }
+
+.HowSection-stepContainer {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 450px; }
+
+.HowSection-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+  .HowSection-stepContainer1 .HowSection-bg {
+    background-position: center top; }
+  .HowSection-stepContainer1 .HowSection-bg,
+  .HowSection-stepContainer2 .HowSection-bg {
+    transition: transform 1s;
+    transform: scale3d(1.15, 1.15, 1.15); }
+    .HowSection-stepContainer1 .HowSection-bg.appear,
+    .HowSection-stepContainer2 .HowSection-bg.appear {
+      transform: scale3d(1, 1, 1); }
+
+.HowSection-stepContainer1 .HowSection-fixedHeader {
+  background: #262022; }
+
+.HowSection-stepContainer2 .HowSection-fixedHeader {
+  background: #959595; }
+  .HowSection-stepContainer2 .HowSection-fixedHeader .FixedHeader-subtitle {
+    color: #d4d4db; }
+
+.HowSection-stepContainer3 .HowSection-fixedHeader {
+  background: #252F3F; }
+
+.HowSection-particleJS {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -200px;
+  opacity: 0.3; }
+
+.HowSection-stepContent {
+  width: 600px;
+  position: relative; }
+  @media (max-width: 767px) {
+    .HowSection-stepContent {
+      width: 100%;
+      padding: 0 22px; } }
+
+.HowSection-stepNumber {
+  font-size: 20px; }
+  @media (max-width: 767px) {
+    .HowSection-stepNumber {
+      font-size: 16px; } }
+
+.HowSection-stepTitle {
+  margin-top: 22px;
+  font-size: 32px; }
+  @media (max-width: 767px) {
+    .HowSection-stepTitle {
+      font-size: 26px; } }
+
+.HowSection-stepDescription {
+  margin-top: 22px;
+  font-size: 20px; }
+  @media (max-width: 767px) {
+    .HowSection-stepDescription {
+      font-size: 16px; } }
+
+.MobileHeader {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 44px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #283157; }
+  @media (min-width: 768px) {
+    .MobileHeader {
+      display: none; } }
+
+.MobileHeader-left {
+  padding: 11px; }
+
+.MobileHeader-logoLink {
+  color: #FFF;
+  text-decoration: none;
+  outline: none;
+  transition: opacity 0.1s;
+  font-size: 16px;
+  letter-spacing: 0.07em; }
+  .MobileHeader-logoLink:visited, .MobileHeader-logoLink:hover, .MobileHeader-logoLink:active, .MobileHeader-logoLink:focus {
+    text-decoration: none;
+    outline: none; }
+  .MobileHeader-logoLink:hover {
+    opacity: 0.65; }
+  .MobileHeader-logoLink:hover {
+    opacity: 1.0; }
+
+.MobileHeader-menuBtn {
+  padding: 13px 11px 11px 33px;
+  cursor: pointer; }
+  .MobileHeader-menuBtn:hover {
+    overflow: 0.65; }
+
+.MobileHeader-menuIcon {
+  width: 23px;
+  height: 16px;
+  font-size: 0; }
+
+.MobileMenu {
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 121px 44px;
+  background-color: #EDEEEF;
+  z-index: 2;
+  opacity: 0.98; }
+  .MobileMenu.transition-enter {
+    opacity: 0.01;
+    transform: scale3d(0.85, 0.85, 0.85); }
+  .MobileMenu.transition-enter.transition-enter-active {
+    opacity: 0.96;
+    transform: scale3d(1, 1, 1);
+    transition: opacity 0.4s, transform 0.4s; }
+  .MobileMenu.transition-leave {
+    opacity: 0.96;
+    transform: scale3d(1, 1, 1); }
+  .MobileMenu.transition-leave.transition-leave-active {
+    opacity: 0.01;
+    transform: scale3d(0.85, 0.85, 0.85);
+    transition: opacity 0.4s, transform 0.4s; }
+
+.MobileMenu-closeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 33px;
+  cursor: pointer; }
+
+.MobileMenu-closeIcon {
+  width: 16px;
+  height: 17px;
+  font-size: 0; }
+
+.MobileMenu-item + .MobileMenu-item {
+  margin-top: 44px; }
+
+.MobileMenu-itemLink {
+  color: #283157;
+  text-decoration: none;
+  outline: none;
+  transition: opacity 0.1s;
+  display: inline-block; }
+  .MobileMenu-itemLink:visited, .MobileMenu-itemLink:hover, .MobileMenu-itemLink:active, .MobileMenu-itemLink:focus {
+    text-decoration: none;
+    outline: none; }
+  .MobileMenu-itemLink:hover {
+    opacity: 0.65; }
+  .MobileMenu-itemLink:hover {
+    opacity: 1; }
+
+.MobileMenu-itemTitle {
+  font-size: 36px; }
+
+.MobileMenu-itemDescription {
+  font-size: 16px;
+  color: #93959b; }
+
+.NLParallaxBackgrounds {
+  z-index: 0; }
+
+.NLParallaxBackgrounds-imageWrapper {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #b7c1c3;
+  -webkit-backface-visibility: hidden;
+  z-index: 0; }
+
+.NLParallaxBackgrounds-image {
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.2s; }
+  .NLParallaxBackgrounds-image.loaded {
+    opacity: 1.0 !important; }
+
+.PortfolioSection {
+  overflow: hidden;
+  background-color: #E0E0E0;
+  padding: 176px 44px 0; }
+  @media (max-width: 767px) {
+    .PortfolioSection {
+      padding: 132px 22px 0; } }
+
+.PortfolioSection-fixedHeader {
+  background-color: #E0E0E0; }
+  .PortfolioSection-fixedHeader a {
+    color: #333; }
+
+.PortfolioSection-content {
+  position: relative;
+  display: flex;
+  max-width: 1024px;
+  margin: 0 auto;
+  justify-content: space-between; }
+  @media (max-width: 767px) {
+    .PortfolioSection-content {
+      display: block;
+      max-width: 100%; } }
+
+.PortfolioSection-titleContainer {
+  flex-basis: 25%; }
+
+.PortfolioSection-title {
+  font-size: 32px; }
+  @media (max-width: 767px) {
+    .PortfolioSection-title {
+      font-size: 26px; } }
+
+.PortfolioSection-descriptionContainer {
+  flex-basis: 66%; }
+
+.PortfolioSection-description {
+  font-size: 20px;
+  line-height: 1.8; }
+  @media (max-width: 767px) {
+    .PortfolioSection-description {
+      margin-top: 22px;
+      font-size: 16px; } }
+
+.PortfolioSection-projectLink {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 11px 22px 11px 33px;
+  color: white;
+  background-color: #283157;
+  text-decoration: none;
+  outline: none;
+  transition: background-color 0.15s;
+  margin-top: 44px; }
+  .PortfolioSection-projectLink span {
+    vertical-align: middle; }
+  .PortfolioSection-projectLink:visited, .PortfolioSection-projectLink:hover, .PortfolioSection-projectLink:active, .PortfolioSection-projectLink:focus {
+    text-decoration: none;
+    outline: none; }
+  .PortfolioSection-projectLink:hover {
+    background-color: #181C37; }
+  .PortfolioSection-projectLink:hover::after {
+    transform: translate3d(60%, 0, 0); }
+  .PortfolioSection-projectLink::after {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 9px;
+    height: 14px;
+    margin-left: 22px;
+    background: url("./icons/right-arrow.svg");
+    background-size: 9px 14px;
+    background-repeat: no-repeat;
+    transition: transform 0.15s; }
+  @media (max-width: 767px) {
+    .PortfolioSection-projectLink {
+      margin-top: 22px; } }
+
+.PortfolioSection-screenshotContainer {
+  position: relative;
+  height: 500px;
+  margin: 176px auto 0;
+  z-index: 0; }
+  @media (max-width: 767px) {
+    .PortfolioSection-screenshotContainer {
+      margin: 308px auto 0;
+      animation: ScreenshotAnim 25s both infinite; } }
+
+.PortfolioSection-screenshot1,
+.PortfolioSection-screenshot2,
+.PortfolioSection-screenshot3,
+.PortfolioSection-screenshot4,
+.PortfolioSection-screenshot5 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -180px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2); }
+  @media (max-width: 767px) {
+    .PortfolioSection-screenshot1,
+    .PortfolioSection-screenshot2,
+    .PortfolioSection-screenshot3,
+    .PortfolioSection-screenshot4,
+    .PortfolioSection-screenshot5 {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.4); } }
+
+.PortfolioSection-screenshot1 {
+  width: 360px;
+  height: 390px;
+  background: url("./images/PortfolioSection-img4.jpg");
+  background-size: cover;
+  transform: translate3d(-100%, 0, 0); }
+  @media (max-width: 767px) {
+    .PortfolioSection-screenshot1 {
+      display: none; } }
+  @media (min-width: 768px) {
+    .PortfolioSection-screenshot1 {
+      transition: transform 1s; }
+      .PortfolioSection.disappear .PortfolioSection-screenshot1 {
+        transform: translate3d(-65%, 0, 0); } }
+
+.PortfolioSection-screenshot2 {
+  width: 360px;
+  height: 460px;
+  background: url("./images/PortfolioSection-img2.jpg");
+  background-size: cover;
+  transform: translate3d(-55%, 0, 0);
+  z-index: 1; }
+  @media (max-width: 767px) {
+    .PortfolioSection-screenshot2 {
+      transform: translate3d(20%, -53%, 0);
+      z-index: 3; } }
+  @media (min-width: 768px) {
+    .PortfolioSection-screenshot2 {
+      transition: transform 1s; }
+      .PortfolioSection.disappear .PortfolioSection-screenshot2 {
+        transform: translate3d(-30%, 0, 0); } }
+
+.PortfolioSection-screenshot3 {
+  width: 360px;
+  height: 500px;
+  background: url("./images/PortfolioSection-img1.jpg");
+  background-size: cover;
+  z-index: 2; }
+  @media (max-width: 767px) {
+    .PortfolioSection-screenshot3 {
+      transform: translate3d(12%, 0, 0);
+      z-index: 5; } }
+  @media (min-width: 768px) {
+    .PortfolioSection-screenshot3 {
+      transition: transform 1s; }
+      .PortfolioSection.disappear .PortfolioSection-screenshot3 {
+        transform: translate3d(0, 0, 0) scale3d(1.1, 1.1, 1.1); } }
+
+.PortfolioSection-screenshot4 {
+  width: 360px;
+  height: 460px;
+  background: url("./images/PortfolioSection-img3.jpg");
+  background-size: cover;
+  transform: translate3d(55%, 0, 0);
+  z-index: 1; }
+  @media (max-width: 767px) {
+    .PortfolioSection-screenshot4 {
+      transform: translate3d(-20%, -33%, 0);
+      z-index: 4; } }
+  @media (min-width: 768px) {
+    .PortfolioSection-screenshot4 {
+      transition: transform 1s; }
+      .PortfolioSection.disappear .PortfolioSection-screenshot4 {
+        transform: translate3d(30%, 0, 0); } }
+
+.PortfolioSection-screenshot5 {
+  width: 360px;
+  height: 390px;
+  background: url("./images/PortfolioSection-img5.jpg");
+  background-size: cover;
+  transform: translate3d(100%, 0, 0); }
+  @media (max-width: 767px) {
+    .PortfolioSection-screenshot5 {
+      display: none; } }
+  @media (min-width: 768px) {
+    .PortfolioSection-screenshot5 {
+      transition: transform 1s; }
+      .PortfolioSection.disappear .PortfolioSection-screenshot5 {
+        transform: translate3d(65%, 0, 0); } }
+
+.ProjectsHeroSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  min-height: 100vh;
+  padding: 88px 44px;
+  color: #333;
+  background-color: #e5e5e7; }
+  @media (max-width: 767px) {
+    .ProjectsHeroSection {
+      padding: 88px 22px; } }
+
+.ProjectsHeroSection-fixedHeader a {
+  color: #333; }
+
+.ProjectsHeroSection-bg {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("./images/ProjectHeroSection-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.ProjectsHeroSection-cloudBg {
+  position: absolute;
+  width: 3600px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: url("./images/ProjectsHeroSection-cloud.png");
+  background-position: left top;
+  background-repeat: repeat-x;
+  background-size: cover;
+  animation: CloudAnim 200s linear infinite; }
+
+.ProjectsHeroSection-content {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  flex: 0 1 1024px; }
+
+.ProjectsHeroSection-title {
+  width: 60%;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  line-height: 1.8; }
+  .ProjectsHeroSection-title strong {
+    font-weight: 700; }
+  @media (max-width: 767px) {
+    .ProjectsHeroSection-title {
+      width: 100%;
+      font-size: 16px; } }
+
+.ProjectsHeroSection-downArrowIcon {
+  position: absolute;
+  width: 46px;
+  height: 24px;
+  left: 50%;
+  bottom: 33px;
+  margin-left: -23px;
+  font-size: 0;
+  animation: DownArrowAnim 1s infinite;
+  cursor: pointer; }
+  .ProjectsHeroSection-downArrowIcon:hover {
+    opacity: 0.65; }
+
+@keyframes CloudAnim {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  100% {
+    transform: translate3d(-50%, 0, 0); } }
+
+@keyframes DownArrowAnim {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  50% {
+    transform: translate3d(0, 20%, 0); }
+  100% {
+    transform: translate3d(0, 0, 0); } }
+
+.ProjectGalleryItem {
+  display: block;
+  color: white;
+  transition: transform 1s;
+  transform: translate3d(0, 30%, 0);
+  text-decoration: none;
+  outline: none;
+  pointer-events: none; }
+  .ProjectGalleryItem:visited, .ProjectGalleryItem:hover, .ProjectGalleryItem:active, .ProjectGalleryItem:focus {
+    text-decoration: none;
+    outline: none; }
+  .ProjectGalleryItem.appear {
+    transform: translate3d(0, 0, 0); }
+
+.ProjectGalleryItem-itemImageWrapper {
+  overflow: hidden;
+  transition: transform 1s; }
+  .ProjectGalleryItem:hover .ProjectGalleryItem-itemImageWrapper {
+    transition: transform 0.4s;
+    transform: scale3d(0.95, 0.95, 0.95); }
+
+.ProjectGalleryItem-itemImage {
+  width: 100%;
+  transition: transform 1s;
+  transform: scale3d(1.2, 1.2, 1.2);
+  pointer-events: auto; }
+  .ProjectGalleryItem:hover .ProjectGalleryItem-itemImage {
+    transition: transform 0.4s !important;
+    transform: scale3d(1.15, 1.15, 1.15) !important; }
+  .ProjectGalleryItem.appear .ProjectGalleryItem-itemImage {
+    transform: scale3d(1, 1, 1); }
+
+.ProjectGalleryItem-itemLabels {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.ProjectGalleryItem-itemTitle {
+  display: inline-block;
+  margin-top: 22px;
+  font-size: 24px;
+  text-align: center;
+  pointer-events: auto; }
+
+.ProjectGalleryItem-itemSubtitle {
+  display: inline-block;
+  opacity: 0.6;
+  font-size: 16px;
+  text-align: center;
+  pointer-events: auto; }
+
+.ProjectsGallery {
+  position: relative;
+  color: white;
+  background-color: rgba(31, 39, 73, 0.88); }
+
+.ProjectsGallery-fixedHeader {
+  background-color: #283157; }
+
+.ProjectsGallery-content {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 176px 66px; }
+  @media (max-width: 767px) {
+    .ProjectsGallery-content {
+      padding: 132px 11px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .ProjectsGallery-content {
+      padding: 176px 22px; } }
+
+.ProjectsGallery-items {
+  display: flex; }
+  @media (max-width: 767px) {
+    .ProjectsGallery-items {
+      display: block; } }
+
+.ProjectsGallery-left,
+.ProjectsGallery-right {
+  flex: 1 1 auto;
+  width: 50%;
+  padding: 0 33px; }
+  @media (max-width: 767px) {
+    .ProjectsGallery-left,
+    .ProjectsGallery-right {
+      display: block;
+      width: 100%;
+      padding: 0; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .ProjectsGallery-left,
+    .ProjectsGallery-right {
+      padding: 0 22px; } }
+
+.ProjectsGallery-right {
+  margin-top: 242px; }
+  @media (max-width: 767px) {
+    .ProjectsGallery-right {
+      margin-top: 132px; } }
+
+.ProjectsGallery-item + .ProjectsGallery-item {
+  margin-top: 132px; }
+
+.ProjectsGridSection {
+  position: relative; }
+
+.ProjectsGridSection-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  opacity: 0.88;
+  transition: background-color 0.6s; }
+
+.ProjectsGridItem {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  color: white;
+  padding: 88px 44px; }
+  @media (max-width: 767px) {
+    .ProjectsGridItem {
+      flex-direction: column;
+      height: 100%;
+      min-height: 100vh;
+      padding: 132px 22px; } }
+
+.ProjectsGridItem-fixedHeader {
+  background-color: #111; }
+
+.ProjectsGridItem-content {
+  position: relative;
+  flex: 0 1 1024px; }
+  @media (max-width: 767px) {
+    .ProjectsGridItem-content {
+      flex: none;
+      margin-top: 44px; } }
+
+.ProjectsGridItem-subtitle {
+  font-size: 18px;
+  opacity: 0.8; }
+  @media (max-width: 767px) {
+    .ProjectsGridItem-subtitle {
+      font-size: 16px; } }
+
+.ProjectsGridItem-title {
+  width: 50%;
+  font-size: 40px; }
+  @media (max-width: 767px) {
+    .ProjectsGridItem-title {
+      width: 100%;
+      font-size: 26px;
+      margin-top: 6px; } }
+
+.ProjectsGridItem-description {
+  width: 50%;
+  margin-top: 22px;
+  padding-right: 88px;
+  font-size: 18px;
+  opacity: 0.8; }
+  @media (max-width: 767px) {
+    .ProjectsGridItem-description {
+      width: 100%;
+      padding-right: 0;
+      font-size: 16px; } }
+
+.ProjectsGridItem-link {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 11px 33px;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  outline: none;
+  transition: background-color 0.15s;
+  font-weight: 400;
+  margin-top: 33px; }
+  .ProjectsGridItem-link span {
+    vertical-align: middle; }
+  .ProjectsGridItem-link:visited, .ProjectsGridItem-link:hover, .ProjectsGridItem-link:active, .ProjectsGridItem-link:focus {
+    text-decoration: none;
+    outline: none; }
+  .ProjectsGridItem-link:hover {
+    background-color: rgba(231, 231, 231, 0.9); }
+  .ProjectsGridItem-link:hover::before {
+    transform: translate3d(20%, -20%, 0); }
+  .ProjectsGridItem-link::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url("./icons/new-window-2.svg");
+    background-size: 10px 10px;
+    background-repeat: no-repeat;
+    top: 18px;
+    right: 33px;
+    transition: transform 0.15s; }
+  .ProjectsGridItem-link::after {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 18px;
+    height: 15px;
+    top: 1px;
+    margin-left: 11px;
+    background: url("./icons/new-window-1.svg");
+    background-size: 18px 15px;
+    background-repeat: no-repeat; }
+
+.ProjectsGridItem-image {
+  position: absolute;
+  width: 50%;
+  height: 540px;
+  top: 50%;
+  right: 0;
+  margin-top: -270px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 11px 55px rgba(0, 0, 0, 0.4); }
+  @media (max-width: 767px) {
+    .ProjectsGridItem-image {
+      position: relative;
+      width: 100%;
+      height: auto;
+      padding-bottom: 75%;
+      top: 0;
+      margin-top: 0;
+      box-shadow: none;
+      transform: none !important; } }
+
+.Toast {
+  position: fixed;
+  width: 600px;
+  height: 66px;
+  top: -66px;
+  z-index: 2; }
+  @media (max-width: 767px) {
+    .Toast {
+      width: 100%; } }
+
+.Toast-content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background: #EC6040;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  cursor: pointer;
+  transform: translate3d(0, 100%, 0);
+  transition: opacity 0.2s, transform 0.2s; }
+  .Toast-content.transition-enter {
+    opacity: 0.01;
+    transform: translate3d(0, 0, 0); }
+  .Toast-content.transition-enter.transition-enter-active {
+    opacity: 1;
+    transform: translate3d(0, 100%, 0); }
+  .Toast-content.transition-leave {
+    opacity: 1;
+    transform: translate3d(0, 100%, 0); }
+  .Toast-content.transition-leave.transition-leave-active {
+    opacity: 0.01;
+    transform: translate3d(0, 0, 0); }
+
+.Toast-message {
+  flex: 1 1 auto;
+  padding-left: 33px; }
+
+.Toast-closeBtn {
+  padding: 11px;
+  margin-right: 11px;
+  transition: transform 0.2s; }
+  .Toast-content:hover .Toast-closeBtn {
+    transform: rotate(90deg); }
+
+.Toast-closeIcon {
+  width: 15px;
+  height: 15px;
+  font-size: 0; }

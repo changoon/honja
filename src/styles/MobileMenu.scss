@@ -1,0 +1,69 @@
+.MobileMenu {
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: $unit*11 $unit*4;
+  background-color: #EDEEEF;
+  z-index: 2;
+  opacity: 0.98;
+
+  &.transition-enter {
+    opacity: 0.01;
+    transform: scale3d(0.85,0.85,0.85);
+  }
+  &.transition-enter.transition-enter-active {
+    opacity: 0.96;
+    transform: scale3d(1,1,1);
+    transition: opacity 0.4s, transform 0.4s;
+  }
+  &.transition-leave {
+    opacity: 0.96;
+    transform: scale3d(1,1,1);
+  }
+  &.transition-leave.transition-leave-active {
+    opacity: 0.01;
+    transform: scale3d(0.85,0.85,0.85);
+    transition: opacity 0.4s, transform 0.4s;
+  }
+}
+
+.MobileMenu-closeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: $unit*3;
+  cursor: pointer;
+}
+
+.MobileMenu-closeIcon {
+  width: 16px;
+  height: 17px;
+  font-size: 0;
+}
+
+.MobileMenu-item {
+  &+.MobileMenu-item {
+    margin-top: $unit*4;
+  }
+}
+
+.MobileMenu-itemLink {
+  @include styleLink(#283157);
+  display: inline-block;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.MobileMenu-itemTitle {
+  font-size: 36px;
+}
+
+.MobileMenu-itemDescription {
+  font-size: 16px;
+  color: #93959b;
+}

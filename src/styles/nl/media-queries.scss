@@ -1,0 +1,90 @@
+// Exact
+@mixin device-xs() {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin device-sm() {
+    @media (min-width: 768px) and (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin device-md() {
+    @media (min-width: 992px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin device-lg() {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+// Minimum
+@mixin device-xs-min() {
+    @content;
+}
+
+@mixin device-sm-min() {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin device-md-min() {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin device-lg-min() {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+// Maximum
+@mixin device-xs-max() {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin device-sm-max() {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin device-md-max() {
+    @media (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin device-lg-max() {
+    @content;
+}
+
+// Orientation
+@mixin landscape() {
+    @media (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin portrait() {
+    @media (orientation: portrait) {
+        @content;
+    }
+}
+
+// High-resolution such as the Retina display
+@mixin retina() {
+    @media only screen and (min-resolution: 2dppx), only screen and (-webkit-min-device-pixel-ratio: 2) {
+        @content;
+    }
+}

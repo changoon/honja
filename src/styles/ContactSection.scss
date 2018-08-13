@@ -1,0 +1,63 @@
+.ContactSection {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  min-height: 100vh;
+  padding: $unit*4;
+
+  @include device-xs() {
+    padding: 0 $unit*2;
+  }
+}
+
+.ContactSection-fixedHeader {
+  background: #283157;
+
+  a {
+    color: white;
+  }
+}
+
+.ContactSection-content {
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+  
+  vertical-align: middle;
+
+  @include device-xs() {
+    width: 100%;
+  }
+}
+
+.ContactSection-title {
+  font-size: 32px;
+
+  @include device-xs() {
+    font-size: 26px;
+  }
+}
+
+.ContactSection-description {
+  width: 70%;
+  margin-top: $unit*2;
+  font-size: 20px;
+  white-space: pre-line;
+
+  @include device-xs() {
+    width: 100%;
+    font-size: 16px;
+    white-space: normal;
+  }
+}
+
+.ContactSection-askLink {
+  @include styleBtnLink(white, #283157, #181C37);
+  margin-top: $unit*2;
+}
+
+.ContactSection-footer {
+  margin-top: $unit*8;
+}
